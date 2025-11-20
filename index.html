@@ -8,6 +8,8 @@
     <title>Heewon&#39;s Website</title>
     <link rel="shortcut icon" href="./images/my_img.ico" type="images/x-icon" />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/133260cff9.js"
       crossorigin="anonymous"
@@ -43,13 +45,19 @@
           안녕하세요!!<br /><strong class="home__title--strong">Heewon</strong
           >입니다.
         </h2>
+        <span class="header__greeting" id="greeting"></span>
         <p class="home__discription">
           우주에서 가장 엄청 제일 뛰어난 AI 개발자
         </p>
         <a class="home__contact" href="#contact">연락처</a>
       </section>
       <!-- about -->
-      <section id="about" class="section max-container">
+      <section
+        id="about"
+        class="section max-container"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <h2 class="title">Heewon</h2>
         <p class="description">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet vel
@@ -61,17 +69,17 @@
           perferendis tenetur itaque omnis officia corrupti?
         </p>
         <ul class="majors">
-          <li class="major">
+          <li class="major" data-aos="fade-right" data-aos-delay="100">
             <i class="fa-brands fa-html5 major__icon"></i>
             <p class="major__title">front-end</p>
             <p>HTML, CSS, JavaScript, React</p>
           </li>
-          <li class="major">
+          <li class="major" data-aos="fade-up" data-aos-delay="200">
             <i class="fa-solid fa-mobile major__icon"></i>
             <p class="major__title">Mobile</p>
             <p>React-Native, Android, IOS, Kotlin</p>
           </li>
-          <li class="major">
+          <li class="major" data-aos="fade-left" data-aos-delay="300">
             <i class="fa-solid fa-server major__icon"></i>
             <p class="major__title">Back-end</p>
             <p>Node.js, FastAPI</p>
@@ -96,7 +104,7 @@
       </section>
       <!-- skills -->
       <section id="skills" class="section">
-        <div class="max-container">
+        <div class="max-container" data-aos="fade-up" data-aos-duration="1000">
           <h2 class="title">기술</h2>
           <p class="description">언어 및 도구</p>
           <p>
@@ -109,7 +117,11 @@
             quam magnam, provident fugiat magni nulla!
           </p>
           <div class="skills">
-            <section class="skills__coding">
+            <section
+              class="skills__coding"
+              data-aos="fade-right"
+              data-aos-delay="100"
+            >
               <h3 class="skills__title">언어</h3>
               <ul>
                 <li class="bar">
@@ -154,7 +166,11 @@
                 </li>
               </ul>
             </section>
-            <section class="skills__tools">
+            <section
+              class="skills__tools"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <h3 class="skills__title">도구</h3>
               <ul>
                 <li>VS Code</li>
@@ -164,7 +180,11 @@
                 <li>Pycharm</li>
               </ul>
             </section>
-            <section class="skills__etc">
+            <section
+              class="skills__etc"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
               <h3 class="skills__title">기타</h3>
               <ul>
                 <li>Git/GitHub</li>
@@ -176,34 +196,39 @@
       </section>
       <!-- work -->
       <section id="work" class="section">
-        <div class="max-container">
+        <div class="max-container" data-aos="fade-up" data-aos-duration="1000">
           <h2 class="title">포트폴리오</h2>
           <p class="description">Projects</p>
           <ul class="categories">
             <li>
-              <button class="category category--selected">
+              <button class="category category--selected" data-category="all">
                 ALL<span class="category__count">10</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="front">
                 Front-end<span class="category__count">3</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="mobile">
                 Mobile<span class="category__count">5</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="backend">
                 Back-end<span class="category__count">2</span>
               </button>
             </li>
           </ul>
           <ul class="projects">
-            <li class="project">
-              <a href="#" target="_blank">
+            <li
+              class="project"
+              data-type="front"
+              data-aos="zoom-in"
+              data-aos-delay="50"
+            >
+              <div class="project__card">
                 <img
                   src="./portfoli_images/React_img.png"
                   alt="포트폴리오 사진"
@@ -213,10 +238,15 @@
                   <h3 class="project__title">Project #1</h3>
                   <p>클론코딩 사이트</p>
                 </div>
-              </a>
+              </div>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
+            <li
+              class="project"
+              data-type="front"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="project__card">
                 <img
                   src="./portfoli_images/React_img.png"
                   alt="포트폴리오 사진"
@@ -226,10 +256,15 @@
                   <h3 class="project__title">Project #2</h3>
                   <p>클론코딩 사이트</p>
                 </div>
-              </a>
+              </div>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
+            <li
+              class="project"
+              data-type="front"
+              data-aos="zoom-in"
+              data-aos-delay="150"
+            >
+              <div class="project__card">
                 <img
                   src="./portfoli_images/Vue_img.png"
                   alt="포트폴리오 사진"
@@ -239,10 +274,15 @@
                   <h3 class="project__title">Project #3</h3>
                   <p>클론코딩 사이트</p>
                 </div>
-              </a>
+              </div>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
+            <li
+              class="project"
+              data-type="mobile"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="project__card">
                 <img
                   src="./portfoli_images/Flutter_img.jpg"
                   alt="포트폴리오 사진"
@@ -252,10 +292,15 @@
                   <h3 class="project__title">Project #4</h3>
                   <p>클론코딩 사이트</p>
                 </div>
-              </a>
+              </div>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
+            <li
+              class="project"
+              data-type="mobile"
+              data-aos="zoom-in"
+              data-aos-delay="250"
+            >
+              <div class="project__card">
                 <img
                   src="./portfoli_images/Flutter_img.jpg"
                   alt="포트폴리오 사진"
@@ -265,10 +310,15 @@
                   <h3 class="project__title">Project #5</h3>
                   <p>클론코딩 사이트</p>
                 </div>
-              </a>
+              </div>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
+            <li
+              class="project"
+              data-type="mobile"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="project__card">
                 <img
                   src="./portfoli_images/ReactNative_img.png"
                   alt="포트폴리오 사진"
@@ -278,10 +328,15 @@
                   <h3 class="project__title">Project #6</h3>
                   <p>클론코딩 사이트</p>
                 </div>
-              </a>
+              </div>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
+            <li
+              class="project"
+              data-type="mobile"
+              data-aos="zoom-in"
+              data-aos-delay="350"
+            >
+              <div class="project__card">
                 <img
                   src="./portfoli_images/Swift_img.jpg"
                   alt="포트폴리오 사진"
@@ -291,10 +346,15 @@
                   <h3 class="project__title">Project #7</h3>
                   <p>클론코딩 사이트</p>
                 </div>
-              </a>
+              </div>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
+            <li
+              class="project"
+              data-type="mobile"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <div class="project__card">
                 <img
                   src="./portfoli_images/Kottlin_img.png"
                   alt="포트폴리오 사진"
@@ -304,10 +364,15 @@
                   <h3 class="project__title">Project #8</h3>
                   <p>클론코딩 사이트</p>
                 </div>
-              </a>
+              </div>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
+            <li
+              class="project"
+              data-type="backend"
+              data-aos="zoom-in"
+              data-aos-delay="450"
+            >
+              <div class="project__card">
                 <img
                   src="./portfoli_images/Spring.png"
                   alt="포트폴리오 사진"
@@ -317,10 +382,15 @@
                   <h3 class="project__title">Project #9</h3>
                   <p>클론코딩 사이트</p>
                 </div>
-              </a>
+              </div>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
+            <li
+              class="project"
+              data-type="backend"
+              data-aos="zoom-in"
+              data-aos-delay="500"
+            >
+              <div class="project__card">
                 <img
                   src="./portfoli_images/NodeJS_img.png"
                   alt="포트폴리오 사진"
@@ -330,17 +400,22 @@
                   <h3 class="project__title">Project #10</h3>
                   <p>클론코딩 사이트</p>
                 </div>
-              </a>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <!-- lisence -->
-      <section id="license" class="section max-container">
+      <section
+        id="license"
+        class="section max-container"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <h2 class="title">자격증</h2>
         <p class="description">국가 기술 자격증</p>
         <ul class="licenses">
-          <li class="license">
+          <li class="license" data-aos="fade-right" data-aos-delay="100">
             <img
               class="license__img"
               src="./images/license.jpg"
@@ -356,7 +431,7 @@
               </p>
             </div>
           </li>
-          <li class="license">
+          <li class="license" data-aos="fade-left" data-aos-delay="200">
             <img
               class="license__img"
               src="./images/licens2.jpg"
@@ -382,21 +457,58 @@
           ><i class="fa-solid fa-arrow-up"></i
         ></a>
       </aside>
+
+      <!-- Modal -->
+      <div id="projectModal" class="modal">
+        <div class="modal__content">
+          <span class="modal__close">&times;</span>
+          <img
+            id="modalImage"
+            src=""
+            alt="프로젝트 이미지"
+            class="modal__image"
+          />
+          <h2 id="modalTitle" class="modal__title"></h2>
+          <p id="modalDescription" class="modal__description">
+            이 프로젝트는 최신 기술을 활용하여 개발된 웹 애플리케이션입니다.
+            사용자 경험을 최우선으로 고려한 UI/UX 디자인과 효율적인 코드 구조를
+            갖추고 있습니다. 반응형 디자인을 통해 다양한 디바이스에서 최적의
+            화면을 제공합니다.
+          </p>
+          <div class="modal__details">
+            <div class="modal__detail">
+              <h3>사용 기술</h3>
+              <p id="modalTech">HTML, CSS, JavaScript, React</p>
+            </div>
+            <div class="modal__detail">
+              <h3>프로젝트 기간</h3>
+              <p id="modalPeriod">2024.01 ~ 2024.03</p>
+            </div>
+            <div class="modal__detail">
+              <h3>주요 기능</h3>
+              <ul id="modalFeatures">
+                <li>반응형 웹 디자인</li>
+                <li>사용자 인터랙션</li>
+                <li>데이터 시각화</li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal__links">
+            <a href="#" class="modal__button" target="_blank">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="#" class="modal__button" target="_blank">
+              <i class="fa-solid fa-globe"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- contact -->
     <footer id="contact" class="section">
-      <div class="max-container">
+      <div class="max-container" data-aos="fade-up" data-aos-duration="1000">
         <h2 class="title">연락주세요 !!</h2>
         <ul class="contact__links">
-          <li>
-            <a
-              class="contact__link"
-              href="https://github.com/heewonLEE2"
-              target="_blank"
-              title="깃허브"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </li>
           <li>
             <a
               class="contact__link"
@@ -410,6 +522,8 @@
         <p>&copy; Heewon - All rights reserved</p>
       </div>
     </footer>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
